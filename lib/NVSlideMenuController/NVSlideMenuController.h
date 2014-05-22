@@ -26,6 +26,8 @@ typedef NS_ENUM(NSUInteger, NVSlideMenuControllerSlideDirection)
                                                          // `-closeMenuBehindContentViewController:animated:completion:`
 @property (nonatomic, assign) BOOL showShadowOnContentView; // default is YES. Set it to NO to remove shadow from content view
 
+@property (nonatomic, strong) UIPanGestureRecognizer *panGesture;
+
 - (id)initWithMenuViewController:(UIViewController *)menuViewController andContentViewController:(UIViewController *)contentViewController;
 
 /** @name Navigation */
